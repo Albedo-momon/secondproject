@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logogrocery" />
+
+    <TextView
+        android:id="@+id/companyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="By Tuljabhawani Store"
+        android:textColor="#D50000"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageView4"
+        android:layout_centerHorizontal="true"
+       />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        android:layout_below="@id/companyname"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/linear_corner"
+        android:elevation="8dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/recyclerView"
+       >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="8dp"
+            app:srcCompat="@drawable/ic_baseline_contact_phone_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:text="continue with phone"
+            android:textColor="@color/colorblack"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="By continuing you agree to our Terms Of Service, Privacy Policy Content Policy"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+
+</RelativeLayout>

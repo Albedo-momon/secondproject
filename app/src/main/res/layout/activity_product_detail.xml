@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    tools:context=".ProductDetail.ProductDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+
+    <ImageView
+        android:id="@+id/productdetailimage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <LinearLayout
+        android:id="@+id/productnamelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productdetailimage"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:text="Product Name"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/productnamedetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Product Name"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/productdisclinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productnamelinear"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:text="Discount"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/productdiscdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Product Discription"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/productlinearmrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productdisclinear"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:text="MRP"
+            android:textColor="#4F000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/productmrpdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:textColor="#4F000000"
+            android:text="Product MRP"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/productpricelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productlinearmrp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:text="Our Price"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/productpricedetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Product Price"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/productsavinglinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productpricelinear"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:text="Saving"
+
+            android:textColor="#304FFE"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/productsavingdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productdiscdetail"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Product Price"
+            android:textColor="#304FFE"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/productunitdetail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productsavinglinear"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="right"
+
+        android:text="Unit"
+        android:textColor="@color/colorblack"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/addtocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/gradient1"
+        android:fontFamily="@font/roboto_medium"
+        android:padding="10dp"
+        android:text="Add To Cart"
+        android:textColor="@color/colorwhite"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/quantityincrementbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/productunitdetail"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#6200EA"
+            android:fontFamily="@font/roboto_medium"
+            android:onClick="decrement"
+            android:text="REMOVE"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_horizontal"
+            android:text="1"
+            android:textColor="@color/colorblack"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/additon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AA00FF"
+            android:fontFamily="@font/roboto_medium"
+            android:onClick="increment"
+            android:text="ADD"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/finalpricetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Total"
+
+        android:textColor="@color/colorblack"
+        android:textSize="20dp" />
+    </RelativeLayout>
+
+
+</ScrollView>

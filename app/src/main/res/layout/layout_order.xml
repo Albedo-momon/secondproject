@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#F6E4FF"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/Customernamelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:maxLines="2"
+            android:paddingLeft="10dp"
+            android:text="User Name :"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="User Name"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/usermobilelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Customernamelinear"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Mobile Number :"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/usermobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Mobile Nunber"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/useraddresslinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usermobilelinear"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Address :"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/useraddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:maxLines="3"
+            android:paddingLeft="10dp"
+            android:text="Address"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/userdateandtimelinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/useraddresslinear"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Order Date and Time :"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dateandtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Date and Time"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userdelieverytime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userdateandtimelinear"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Delievery Time :"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/delieverytime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Delievery Time"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/totalamountlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userdelieverytime"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Total Amount :"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/producttotalprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Total Amount"
+            android:textColor="#C4000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/show_all_products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalamountlinear"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient1"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Show products"
+        android:textAllCaps="false"
+        android:textColor="@color/colorwhite"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
+
+
+

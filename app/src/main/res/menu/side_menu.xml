@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="none">
+
+
+
+            <item android:id="@+id/home"
+                android:icon="@drawable/home"
+                android:title="Home"
+                android:state_selected="false"
+
+                />
+            <item android:id="@+id/order"
+                android:icon="@drawable/order"
+                android:title="Oder"/>
+            <item android:id="@+id/zcart"
+                android:icon="@drawable/cart"
+                android:title="Cart"
+                />
+
+
+
+        </group>
+
+
+
+</menu>

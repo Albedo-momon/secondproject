@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmFinalOrder">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Please Enter Your Shipment Detail"
+                android:textColor="@color/colorblack"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp">
+
+                <EditText
+                    android:id="@+id/customername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:maxLines="1"
+                    android:text="Enter your name"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="10"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="10dp"
+                    android:text="8975067725"
+                    android:inputType="number"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/customerAddress"
+                    android:maxLength="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="1"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Enter your Address with landmark"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="6"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginRight="10dp"
+                    android:text="431001"
+                    android:inputType="number"
+                    android:padding="15dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerchoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="340dp"
+
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/Spinner_items"
+                    android:padding="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Only cash on delievery available"
+                    android:layout_marginTop="410dp"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/confirmshipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/gradient1"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorwhite"
+                android:text="Confirm Shipment"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

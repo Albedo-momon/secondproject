@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbarlayout"
+        style="@style/Widget.AppCompat.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/close_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="Close"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/update_account_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="end"
+                android:text="Update"
+                android:textColor="@color/colorwhite"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/update_profile_pic"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/toolbarlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/user"
+        app:civ_border_color="@color/colorblack"
+        app:civ_border_width="5dp" />
+    <TextView
+        android:id="@+id/changeprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorblack"
+        android:layout_below="@id/update_profile_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/update_mobile_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_profile_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:inputType="number"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:hint="Enter Alternate Phone"
+        android:textColor="@color/colorblack"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/update_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_mobile_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:textColor="@color/colorblack"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/update_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+
+        android:hint="Enter Address"
+        android:textColor="@color/colorblack"
+        android:textSize="20sp" />
+
+</RelativeLayout>

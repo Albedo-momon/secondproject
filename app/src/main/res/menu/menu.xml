@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:fontFamily="@font/david_libre"
+
+        android:title="Home"/>
+    <item
+        android:id="@+id/order"
+        android:fontFamily="@font/david_libre"
+        android:icon="@drawable/order"
+
+        android:title="Order"/>
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/cart"
+        android:fontFamily="@font/david_libre"
+        android:title="Cart"/>
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/settings"
+        android:fontFamily="@font/david_libre"
+        android:title="Settings"/>
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/about"
+        android:fontFamily="@font/david_libre"
+        android:title="About Us"/>
+
+    <item
+        android:id="@+id/developer"
+        android:icon="@drawable/developer"
+        android:fontFamily="@font/david_libre"
+        android:title="Developer"/>
+    <item
+        android:id="@+id/developerinfo"
+        android:fontFamily="@font/david_libre"
+        android:title="     inphynousplay@gmail.com"/>
+    <item
+        android:id="@+id/developerinfo2"
+        android:fontFamily="@font/david_libre"
+        android:title="     8975067725"/>
+
+
+
+
+</menu>

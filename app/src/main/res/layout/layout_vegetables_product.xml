@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/vegetablesname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/david_libre"
+                android:gravity="center_horizontal"
+                android:text="Product Name"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.191"
+                app:layout_constraintStart_toEndOf="@+id/vegetablesimage"
+                app:layout_constraintTop_toTopOf="@+id/vegetablesimage" />
+
+            <ImageView
+                android:id="@+id/vegetablesimage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/vegetablesname"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/vegetableprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vegetablesimage"
+                android:fontFamily="@font/david_libre"
+                android:gravity="center_horizontal"
+                android:text="Price"
+                android:textColor="@color/colorblack"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/vegetableprice2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/vegetableprice2"
+                app:layout_constraintTop_toBottomOf="@+id/vegetableprice2" />
+
+            <TextView
+                android:id="@+id/vegetableprice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vegetablesimage"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="60dp"
+                android:fontFamily="@font/david_libre"
+                android:gravity="center_horizontal"
+                android:text="Price"
+                android:textColor="@color/colorblack"
+                android:textSize="15sp"
+
+                app:layout_constraintBottom_toBottomOf="@+id/quantity"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/vegetabledisc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vegetableprice"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/david_libre"
+                android:gravity="center_horizontal"
+                android:text="Product Discription....."
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/vegetablesimage"
+                app:layout_constraintTop_toTopOf="@+id/buymilknow" />
+
+            <TextView
+                android:id="@+id/buymilknow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vegetabledisc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Buy Now"
+                android:fontFamily="@font/david_libre"
+                android:padding="10dp"
+                android:background="@drawable/gradient1"
+                android:textColor="@color/colorwhite"
+                app:layout_constraintEnd_toEndOf="@+id/vegetableprice"
+                app:layout_constraintStart_toStartOf="@+id/vegetableprice"
+                app:layout_constraintTop_toBottomOf="@+id/vegetableprice" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/david_libre"
+                android:text="Quantity"
+                android:textColor="@color/colorblack"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@+id/vegetablesname"
+                app:layout_constraintTop_toBottomOf="@+id/vegetablesname" />
+
+            <TextView
+                android:id="@+id/vegetableunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/david_libre"
+                android:text="Unit"
+                android:textColor="@color/colorblack"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/quantity"
+                app:layout_constraintStart_toStartOf="@+id/quantity"
+                app:layout_constraintTop_toBottomOf="@+id/quantity" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

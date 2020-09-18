@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#9028F8"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:id="@+id/toolbar"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:backgroundTint="@color/colorwhite"
+                android:background="@drawable/radius"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/searchview"
+                android:text="Aapko kya chahiye?"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="20dp"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="@color/colorblack"
+                android:paddingLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/searchview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:drawableRight="@drawable/search"
+                android:hint="Search Here....."
+                android:paddingLeft="30dp"
+                android:paddingRight="20dp"
+                android:layout_alignParentRight="true"
+                android:textSize="25sp"
+                app:srcCompat="@drawable/search"
+                app:tint="@color/colorwhite" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</RelativeLayout>
